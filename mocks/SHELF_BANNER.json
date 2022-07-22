@@ -1,0 +1,12 @@
+{
+  "title": "Destaques",
+  "subtitle": "Gemas selecionadas para você",
+  "banner": [
+    {
+      "image": "girl-photo.png",
+      "alt": "Foto de uma mulher usando e demonstrando um brinco com joias dentro",
+      "title": "Foto de uma mulher usando e demonstrando um brinco com joias dentro",
+      "link": "/"
+    }
+  ]
+}

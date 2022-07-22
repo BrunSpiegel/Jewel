@@ -1,0 +1,26 @@
+{
+  "subtitle": "mais que uma pedra preciosa",
+  "title": "preciosa para você",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus ullamcorper sagittis. Nullam semper vitae nisl sit amet auctor. Pellentesque lectus arcu, dignissim non fermentum vitae, dictum id nisi. Morbi ut imperdiet dolor. Nunc laoreet",
+  "link": "/",
+  "banner": [
+    {
+      "image": "holding-hands.png",
+      "alt": "Imagens com duas mão dadas mostrando as aliaças",
+      "title": "Imagem de duas mãos dadas mostrando duas duas alianças uma em cada mão",
+      "link": "/"
+    },
+    {
+      "image": "holding-hands.png",
+      "alt": "Imagens com duas mão dadas mostrando as aliaças",
+      "title": "Imagem de duas mãos dadas mostrando duas duas alianças uma em cada mão",
+      "link": "/"
+    },
+    {
+      "image": "holding-hands.png",
+      "alt": "Imagens com duas mão dadas mostrando as aliaças",
+      "title": "Imagem de duas mãos dadas mostrando duas duas alianças uma em cada mão",
+      "link": "/"
+    }
+  ]
+}

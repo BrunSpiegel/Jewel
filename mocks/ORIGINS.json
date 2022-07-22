@@ -1,0 +1,12 @@
+{
+  "subtitle": "uma história de gerações",
+  "title": "Nossas origens",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus ullamcorper sagittis. Nullam semper vitae nisl sit amet auctor. Pellentesque lectus arcu, dignissim non fermentum vitae, dictum id nisi. Morbi ut imperdiet dolor. Nunc laoreet lectus",
+  "link": "/",
+  "banner": [{
+    "image": "cave.png",
+    "alt": "Image da entrada de uma caverna com um rio",
+    "title": "Imagem da entrada de uma caverna com um rio de cor azul",
+    "link": "/"
+  }]
+}

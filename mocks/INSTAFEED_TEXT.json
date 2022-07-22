@@ -1,0 +1,19 @@
+{
+  "title": "Siga o",
+  "bold": "@brunno_bozz",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus ullamcorper sagittis. Nullam semper vitae nisl sit amet auctor. Pellentesque lectus arcu,",
+  "hashtags": "htc #htc #gemasepedras #pedraspreciosas",
+  "span": "Siga-nos",
+  "icon": [
+    {
+      "image": "facebook_icon.png",
+      "alt": "ícone do Facebook",
+      "title": "ícone da letra F com uma cor roxo claro que se refere a mídia social Facebook"
+    },
+    {
+      "image": "insta-icon.png",
+      "alt": "ícone do instagram",
+      "title": "ícone simples de uma câmera fotográfica com a borda azul e o fundo transparente que se refere a mídia social Instagram"
+    }
+  ]
+}
