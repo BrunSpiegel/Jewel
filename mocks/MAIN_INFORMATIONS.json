@@ -1,0 +1,28 @@
+{
+  "informations": [
+    {
+      "image": "trn-locker.png",
+      "alt": "ícone de fechadura",
+      "span": "Compra 100% segura",
+      "paragraph": "Seus dados ficam protegidos"
+    },
+    {
+      "image": "trn-card.png",
+      "alt": "ícone de cartão de crédito",
+      "span": "Até 3x sem juros",
+      "paragraph": "pague com o cartão de crédito"
+    },
+    {
+      "image": "trn-truck.png",
+      "alt": "ícone de um caminhão",
+      "span": "Receba no mesmo dia",
+      "paragraph": "Para região de São Paulo capital"
+    },
+    {
+      "image": "trn-certificate.png",
+      "alt": "ícone de um certificado",
+      "span": "Produtos Certificados",
+      "paragraph": "Certificação de autencidade ENE2ESE"
+    }
+  ]
+}

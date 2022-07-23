@@ -497,59 +497,56 @@ function textInstaFeed(texts) {
   const $textWrap = document.querySelector(".instafeed__text");
 
   const textElement = document.createElement("div");
-  const titleDiv = document.createElement("div")
+  const titleDiv = document.createElement("div");
   const titleElement = document.createElement("h3");
   const titleBold = document.createElement("b");
-  const descriptionDiv = document.createElement("div")
+  const descriptionDiv = document.createElement("div");
   const descriptionElement = document.createElement("p");
-  const hashtags = document.createElement("p")
+  const hashtags = document.createElement("p");
   const socialMedia = document.createElement("div");
   const followUs = document.createElement("span");
   const faceIcon = document.createElement("img");
   const instaIcon = document.createElement("img");
 
-  textElement.classList.add("instafeed__wrapper-text")
-  titleDiv.classList.add("instafeed__wrapper-title")
-  socialMedia.classList.add("instafeed__social-media")
-  descriptionDiv.classList.add("instafeed__description")
+  textElement.classList.add("instafeed__wrapper-text");
+  titleDiv.classList.add("instafeed__wrapper-title");
+  socialMedia.classList.add("instafeed__social-media");
+  descriptionDiv.classList.add("instafeed__description");
 
   titleElement.textContent = texts.title;
-  titleElement.classList.add("instafeed__wrapper-title--text")
+  titleElement.classList.add("instafeed__wrapper-title--text");
 
   titleBold.textContent = texts.bold;
-  titleBold.classList.add("instafeed__wrapper-title--bold")
+  titleBold.classList.add("instafeed__wrapper-title--bold");
 
   descriptionElement.textContent = texts.description;
-  descriptionElement.classList.add("instafeed__description--text")
+  descriptionElement.classList.add("instafeed__description--text");
 
   hashtags.textContent = texts.hashtags;
-  hashtags.classList.add("instafeed__description--hashtags")
-
+  hashtags.classList.add("instafeed__description--hashtags");
 
   followUs.textContent = texts.span;
-  followUs.classList.add("instafeed__social-media--follow-us")
+  followUs.classList.add("instafeed__social-media--follow-us");
 
-  faceIcon.src = `./assets/${texts.icon[0].image}`
-  faceIcon.alt = `${texts.icon[0].alt}`
-  faceIcon.title = `${texts.icon[0].title}`
+  faceIcon.src = `./assets/${texts.icon[0].image}`;
+  faceIcon.alt = `${texts.icon[0].alt}`;
+  faceIcon.title = `${texts.icon[0].title}`;
 
-  instaIcon.src = `./assets/${texts.icon[1].image}`
-  instaIcon.alt = `${texts.icon[1].alt}`
-  instaIcon.title = `${texts.icon[1].title}`
+  instaIcon.src = `./assets/${texts.icon[1].image}`;
+  instaIcon.alt = `${texts.icon[1].alt}`;
+  instaIcon.title = `${texts.icon[1].title}`;
 
-  
-
-  textElement.append(titleDiv)
+  textElement.append(titleDiv);
   textElement.append(titleElement);
   textElement.append(titleBold);
-  textElement.append(descriptionDiv)
+  textElement.append(descriptionDiv);
   textElement.append(descriptionElement);
 
-  titleDiv.append(titleElement)
-  titleDiv.append(titleBold)
+  titleDiv.append(titleElement);
+  titleDiv.append(titleBold);
 
-  descriptionDiv.append(descriptionElement)
-  descriptionDiv.append(hashtags)
+  descriptionDiv.append(descriptionElement);
+  descriptionDiv.append(hashtags);
 
   socialMedia.append(followUs);
   socialMedia.append(faceIcon);
@@ -626,6 +623,144 @@ function requestLastBannerMid() {
       handleLastBannerMid(json);
     });
 }
+
+function constructMainInformations(mainInformations) {
+  const $InfoWrappers = document.querySelector(".main__wrapper-informations")
+
+
+  const lock = document.createElement("div")
+  const card = document.createElement("div")
+  const truck = document.createElement("div")
+  const certificate = document.createElement("div")
+
+  lock.classList.add("main__informations-last-items")
+  card.classList.add("main__informations-last-items")
+  truck.classList.add("main__informations-last-items")
+  certificate.classList.add("main__informations-last-items")
+
+  const lockerIcon = document.createElement("img")
+  const lockerSpan = document.createElement("span")
+  const lockerPara = document.createElement("p")
+
+  lockerIcon.src = `./assets/${mainInformations.informations[0].image}`
+  lockerIcon.alt = `${mainInformations.informations[0].alt}`
+
+  const lockerIconDiv = document.createElement("div")
+  lockerIconDiv.classList.add("main__informations-icons")
+
+  lockerSpan.textContent = `${mainInformations.informations[0].span}`
+  lockerSpan.classList.add("main__informations-last-items--bold")
+
+  lockerPara.textContent = `${mainInformations.informations[0].paragraph}`
+  lockerPara.classList.add("main__informations-last-items--light")
+
+  const lockerText = document.createElement("div")
+  lockerText.classList.add("main__informations-last-items--text")
+
+  const cardIcon = document.createElement("img")
+  const cardSpan = document.createElement("span")
+  const cardPara = document.createElement("p")
+
+  cardIcon.src = `./assets/${mainInformations.informations[1].image}`
+  cardIcon.alt = `${mainInformations.informations[1].alt}`
+
+  const cardIconDiv = document.createElement("div")
+  cardIconDiv.classList.add("main__informations-icons")
+
+  cardSpan.textContent = `${mainInformations.informations[1].span}`
+  cardSpan.classList.add("main__informations-last-items--bold")
+
+  cardPara.textContent = `${mainInformations.informations[1].paragraph}`
+  cardPara.classList.add("main__informations-last-items--light")
+
+  const cardText = document.createElement("div")
+  cardText.classList.add("main__informations-last-items--text")
+
+  const truckIcon = document.createElement("img")
+  const truckSpan = document.createElement("span")
+  const truckPara = document.createElement("p")
+
+  truckIcon.src = `./assets/${mainInformations.informations[2].image}`
+  truckIcon.alt = `${mainInformations.informations[2].alt}`
+
+  const truckIconDiv = document.createElement("div")
+  truckIcon.classList.add("main__informations-icons")
+
+  truckSpan.textContent = `${mainInformations.informations[2].span}`
+  truckSpan.classList.add("main__informations-last-items--bold")
+
+  truckPara.textContent = `${mainInformations.informations[2].paragraph}`
+  truckPara.classList.add("main__informations-last-items--light")
+
+  const truckText = document.createElement("div")
+  truckText.classList.add("main__informations-last-items--text")
+
+  const certificateIcon = document.createElement("img")
+  const certificateSpan = document.createElement("span")
+  const certificatePara = document.createElement("p")
+
+  certificateIcon.src = `./assets/${mainInformations.informations[3].image}`
+  certificateIcon.alt = `${mainInformations.informations[3].alt}`
+
+  const certificateIconDiv = document.createElement("div")
+  certificateIconDiv.classList.add("main__informations-icons")
+
+  certificateSpan.textContent = `${mainInformations.informations[3].span}`
+  certificateSpan.classList.add("main__informations-last-items--bold")
+
+  certificatePara.textContent = `${mainInformations.informations[3].paragraph}`
+  certificatePara.classList.add("main__informations-last-items--light")
+
+  const certificateText = document.createElement("div")
+  certificateText.classList.add("main__informations-last-items--text")
+
+  lockerIconDiv.appendChild(lockerIcon)
+  lockerText.appendChild(lockerSpan)
+  lockerText.appendChild(lockerPara)
+  
+  cardIconDiv.appendChild(cardIcon)
+  cardText.appendChild(cardSpan)
+  cardText.appendChild(cardPara)
+
+  truckIconDiv.appendChild(truckIcon)
+  truckText.appendChild(truckSpan)
+  truckText.appendChild(truckPara)
+
+  certificateIconDiv.appendChild(certificateIcon)
+  certificateText.appendChild(certificateSpan)
+  certificateText.appendChild(certificatePara)
+
+
+
+  lock.appendChild(lockerIconDiv)
+  lock.appendChild(lockerText)
+
+  card.appendChild(cardIconDiv)
+  card.appendChild(cardText)
+
+  truck.appendChild(truckIconDiv)
+  truck.appendChild(truckText)
+
+  certificate.appendChild(certificateIconDiv)
+  certificate.appendChild(certificateText)
+
+  $InfoWrappers.append(lock)
+  $InfoWrappers.append(card)
+  $InfoWrappers.append(truck)
+  $InfoWrappers.append(certificate)
+}
+
+function mainInformations() {
+  fetch("src/../mocks/MAIN_INFORMATIONS.json")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (json) {
+      constructMainInformations(json);
+    });
+}
+
+mainInformations();
 
 topInformatives();
 requestMenu();
