@@ -887,7 +887,7 @@
 
 .footer {
   background-color: $darkPurple;
-  
+
   margin-top: 50px;
   padding: 53px 0;
 
@@ -897,8 +897,22 @@
   flex-direction: column;
 
   @media (min-width: 768px) {
-    max-width: 600;
-    margin: 0 auto;
+    &__wrapper {
+      width: 100%;
+      max-width: 600;
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    background-image: url(./assets/butterfly-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__wrapper {
+      max-width: 1440px;
+    }
   }
 
   &__newsletter {
@@ -906,7 +920,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 293px;
 
     h5 {
       font-family: "Mulish", sans-serif;
@@ -955,6 +968,12 @@
 
   &__medias {
     margin-top: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
     h5 {
       font-family: "Mulish", sans-serif;
       text-transform: uppercase;
@@ -968,11 +987,19 @@
     width: 100%;
     display: flex;
     gap: 43px;
+
+    display: flex;
+    justify-content: center;
   }
 
   &__menu {
     width: 100%;
     margin-top: 30px;
+
+    @media (min-width: 1024px) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
   &__menu-category {
     display: flex;
@@ -1030,6 +1057,11 @@
     flex-direction: column;
 
     transition: 0.9s;
+
+    @media (min-width: 1024px) {
+      height: auto;
+      overflow: visible;
+    }
 
     &--link {
       color: $white;

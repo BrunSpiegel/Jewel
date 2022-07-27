@@ -1117,9 +1117,21 @@ table {
   flex-direction: column;
 }
 @media (min-width: 768px) {
-  .footer {
+  .footer__wrapper {
+    width: 100%;
     max-width: 600;
     margin: 0 auto;
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    background-image: url(./assets/butterfly-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .footer__wrapper {
+    max-width: 1440px;
   }
 }
 .footer__newsletter {
@@ -1127,7 +1139,6 @@ table {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 293px;
 }
 .footer__newsletter h5 {
   font-family: "Mulish", sans-serif;
@@ -1168,6 +1179,10 @@ table {
 }
 .footer__medias {
   margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .footer__medias h5 {
   font-family: "Mulish", sans-serif;
@@ -1181,10 +1196,18 @@ table {
   width: 100%;
   display: flex;
   gap: 43px;
+  display: flex;
+  justify-content: center;
 }
 .footer__menu {
   width: 100%;
   margin-top: 30px;
+}
+@media (min-width: 1024px) {
+  .footer__menu {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .footer__menu-category {
   display: flex;
@@ -1231,6 +1254,12 @@ table {
   display: flex;
   flex-direction: column;
   transition: 0.9s;
+}
+@media (min-width: 1024px) {
+  .footer__menu-category-content {
+    height: auto;
+    overflow: visible;
+  }
 }
 .footer__menu-category-content--link {
   color: #FFFFFF;

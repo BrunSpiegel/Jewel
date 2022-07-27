@@ -764,6 +764,10 @@ function mainInformations() {
 function toogleFooterMenu() {
   const $footerCategory = document.querySelectorAll(".footer__menu-category")
 
+  const windowSize = window.innerWidth
+
+  if(windowSize >= 1024) return; 
+  
   $footerCategory.forEach(function ($item) {
     $item.addEventListener("click", function() {
       $item.classList.toggle("active")
