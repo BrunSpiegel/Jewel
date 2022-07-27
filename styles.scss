@@ -884,3 +884,158 @@
     border-radius: 10px;
   }
 }
+
+.footer {
+  background-color: $darkPurple;
+  margin-top: 50px;
+  padding: 53px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 293px;
+
+    h5 {
+      font-family: "Mulish", sans-serif;
+      text-transform: uppercase;
+      color: $white;
+      font-size: calculator-rem(20);
+      font-weight: 400;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+
+    p {
+      font-family: "Mulish", sans-serif;
+      margin: 9px 0 15px;
+      color: $white;
+      font-size: calculator-rem(16);
+      font-weight: 400;
+    }
+  }
+  &__newsletter-form {
+    label {
+      font-family: "Mulish", sans-serif;
+      color: $white;
+      font-size: calculator-rem(16);
+      font-weight: 700;
+    }
+
+    input {
+      width: 100%;
+      height: 40px;
+      margin: 5px 0 10px;
+    }
+
+    button {
+      font-family: "Mulish", sans-serif;
+      width: 100%;
+      height: 40px;
+      text-transform: uppercase;
+      font-size: calculator-rem(16);
+      color: $button-black;
+      margin-top: 5px;
+    }
+  }
+
+  &__medias {
+    margin-top: 35px;
+    h5 {
+      font-family: "Mulish", sans-serif;
+      text-transform: uppercase;
+      color: $white;
+      font-size: calculator-rem(16);
+      font-weight: 400;
+    }
+  }
+  &__medias-icon-wrapper {
+    margin-top: 19px;
+    width: 100%;
+    display: flex;
+    gap: 43px;
+  }
+
+  &__menu {
+    width: 100%;
+    margin-top: 30px;
+  }
+  &__menu-category {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    &.active {
+      .footer__menu-category-content {
+        padding: 10px 24px 15px;
+        transition: 0.9s;
+        height: 190px;
+      }
+
+      .footer__menu-category-header--img {
+        transform: rotate(0.50turn);
+        transition: 0.3s;
+      }
+    }
+  }
+  &__menu-category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    background-color: $purple;
+    padding: 15px 24px;
+
+    &--lowercase {
+      font-size: calculator-rem(16);
+      color: $white;
+      font-weight: 700;
+      text-transform: none;
+    }
+
+    &--title {
+      font-size: calculator-rem(16);
+      color: $white;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    
+    &--img {
+      transform: rotate(0);
+      transition: 0.3s;
+    }
+  }
+  &__menu-category-content {
+    height: 0;
+    overflow: hidden;
+    
+    display: flex;
+    flex-direction: column;
+
+    transition: 0.9s;
+
+    &--link {
+      color: $white;
+      font-size: 14px;
+
+      display: block;
+      padding: 10px 0;
+      text-decoration: none;
+    }
+  }
+
+  // &__contacts {
+
+  // }
+}

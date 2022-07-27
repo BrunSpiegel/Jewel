@@ -760,8 +760,20 @@ function mainInformations() {
     });
 }
 
-mainInformations();
 
+function toogleFooterMenu() {
+  const $footerCategory = document.querySelectorAll(".footer__menu-category")
+
+  $footerCategory.forEach(function ($item) {
+    $item.addEventListener("click", function() {
+      $item.classList.toggle("active")
+    })
+  })
+}
+
+toogleFooterMenu()
+
+mainInformations();
 topInformatives();
 requestMenu();
 handleToggleMenuMobile();
