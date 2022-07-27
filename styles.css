@@ -168,7 +168,7 @@ table {
   position: absolute;
   top: 40%;
   z-index: 1;
-  background-image: url("/src/assets/left-arrow.png");
+  background-image: url(/assets/left-arrow.png);
   background-repeat: no-repeat;
   background-position: right 24px center;
 }
@@ -229,7 +229,7 @@ table {
   position: absolute;
   top: 30%;
   z-index: 1;
-  background-image: url("/src/assets/left-arrow.png");
+  background-image: url(/assets/left-arrow.png);
   background-repeat: no-repeat;
   background-position: right 24px center;
 }
@@ -268,7 +268,7 @@ table {
   position: absolute;
   top: 40%;
   z-index: 1;
-  background-image: url("/src/assets/left-arrow.png");
+  background-image: url(/assets/left-arrow.png);
   background-repeat: no-repeat;
   background-position: right 24px center;
 }
@@ -308,7 +308,7 @@ table {
   position: absolute;
   top: 40%;
   z-index: 1;
-  background-image: url("/src/assets/left-arrow.png");
+  background-image: url(/assets/left-arrow.png);
   background-repeat: no-repeat;
   background-position: right 24px center;
 }
@@ -1116,6 +1116,12 @@ table {
   align-items: center;
   flex-direction: column;
 }
+@media (min-width: 768px) {
+  .footer {
+    max-width: 600;
+    margin: 0 auto;
+  }
+}
 .footer__newsletter {
   display: flex;
   justify-content: center;
@@ -1232,4 +1238,23 @@ table {
   display: block;
   padding: 10px 0;
   text-decoration: none;
+}
+.footer__contacts {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  margin: 30px 0 47px;
+  padding: 0 24px;
+}
+.footer__contacts--opening-hour {
+  color: #FFFFFF;
+  font-size: 0.875rem;
+  display: block;
+  padding: 10px;
+  width: 236px;
+  text-align: center;
+}
+.footer__contacts--opening-hour strong {
+  font-weight: 700;
 }/*# sourceMappingURL=styles.css.map */
