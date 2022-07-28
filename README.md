@@ -44,7 +44,7 @@ Slick: Saiba mais <a href="https://kenwheeler.github.io/slick/">aqui!!!<a>
 
 usei o site <a href="https://fakestoreapi.com/">Fake Store API<a> como uma amostra de como a loja irá ficar.
 
-E o site <a href="https://behold.so/">Behold<a> para por as fotos do meu instagram na tela.
+E o site <a href="https://behold.so/">Behold<a> para por as minhas fotos do meu instagram na tela.
 
 
 
