@@ -1116,6 +1116,13 @@ table {
   align-items: center;
   flex-direction: column;
 }
+@media (min-width: 1024px) {
+  .footer {
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+  }
+}
 @media (min-width: 768px) {
   .footer__wrapper {
     width: 100%;
@@ -1123,16 +1130,16 @@ table {
     margin: 0 auto;
   }
 }
+.footer__wrapper {
+  max-width: 1440px;
+}
 @media (min-width: 1024px) {
-  .footer {
+  .footer__wrapper {
     background-image: url("./assets/butterfly-background.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     border-radius: 190px 190px 0px 0px;
-  }
-  .footer__wrapper {
-    max-width: 1440px;
   }
 }
 .footer__newsletter {
@@ -1147,6 +1154,11 @@ table {
   color: #FFFFFF;
   font-size: 1.25rem;
   font-weight: 400;
+}
+@media (min-width: 1024px) {
+  .footer__newsletter h5 {
+    margin-top: 48px;
+  }
 }
 .footer__newsletter strong {
   font-weight: 700;
@@ -1294,8 +1306,6 @@ table {
 }
 .footer__menu-category {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
   flex-direction: column;
 }
 .footer__menu-category.active .footer__menu-category-content {
@@ -1375,6 +1385,14 @@ table {
   margin: 30px 0 47px;
   padding: 0 24px;
 }
+@media (min-width: 1024px) {
+  .footer__contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+}
 .footer__contacts--opening-hour {
   color: #FFFFFF;
   font-size: 0.875rem;
@@ -1383,6 +1401,66 @@ table {
   width: 236px;
   text-align: center;
 }
+@media (min-width: 1024px) {
+  .footer__contacts--opening-hour {
+    width: auto;
+    margin-top: 48px;
+  }
+}
 .footer__contacts--opening-hour strong {
   font-weight: 700;
+}
+.footer__payment-methods {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .footer__payment-methods {
+    display: none;
+  }
+}
+.footer__payment-methods--cards {
+  display: flex;
+  align-items: center;
+  margin: 38px 0 37px;
+}
+.footer__payment-methods--cards img {
+  margin-right: 19px;
+}
+.footer__payment-methods--cards :first-child {
+  margin-right: 17px;
+}
+.footer__payment-methods--cards :last-child {
+  margin-right: 100px;
+}
+.footer__payment-methods--commerce {
+  display: flex;
+  align-items: center;
+}
+.footer__payment-methods--commerce img {
+  margin-right: 18px;
+}
+.footer__payment-methods--commerce :last-child {
+  margin-right: 0;
+}
+.footer__rights-reserved {
+  background-color: #9A7AA0;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .footer__rights-reserved {
+    display: none;
+  }
+}
+.footer__rights-reserved--wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0 10px 110px;
+}
+.footer__rights-reserved--wrapper span {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 0.625rem;
 }/*# sourceMappingURL=styles.css.map */
