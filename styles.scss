@@ -909,6 +909,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border-radius: 190px 190px 0px 0px;
 
     &__wrapper {
       max-width: 1440px;
@@ -939,20 +940,50 @@
       color: $white;
       font-size: calculator-rem(16);
       font-weight: 400;
+
+      @media (min-width: 1024px) {
+        font-family: "open-sans", sans-serif;
+        margin: 13px 0 23px;
+      }
     }
   }
   &__newsletter-form {
+    width: 100%;
+
+    @media (min-width: 1024px) {
+      display: flex;
+      align-items: center;
+      width: auto;
+    }
+
     label {
       font-family: "Mulish", sans-serif;
       color: $white;
       font-size: calculator-rem(16);
       font-weight: 700;
+
+      @media (min-width: 1024px) {
+        font-family: "open Sans", sans-serif;
+      }
     }
 
     input {
       width: 100%;
       height: 40px;
-      margin: 5px 0 10px;
+      margin: 8px 0 10px;
+      padding: 14px 0 12px 16px;
+      border: 0;
+
+      @media (min-width: 1024px) {
+        width: 313px;
+        border-radius: 10px;
+        margin-right: 20px;
+        height: 48px;
+      }
+
+      &::placeholder {
+        color: $inputGrey;
+      }
     }
 
     button {
@@ -963,6 +994,28 @@
       font-size: calculator-rem(16);
       color: $button-black;
       margin-top: 5px;
+
+      @media (min-width: 1024px) {
+        margin-top: 10px;
+      }
+
+      @media (min-width: 1024px) {
+        width: 198px;
+        border-radius: 10px;
+        border: transparent;
+        height: 48px;
+      }
+    }
+  }
+
+  &__newsletter-form-wrapper {
+    @media (min-width: 1024px) {
+      display: flex;
+    }
+
+    &--input {
+      display: flex;
+      flex-direction: column;
     }
   }
 
@@ -973,6 +1026,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    @media (min-width: 1024px) {
+      display: none;
+    }
 
     h5 {
       font-family: "Mulish", sans-serif;
@@ -998,7 +1055,22 @@
 
     @media (min-width: 1024px) {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      width: 100%;
+    }
+
+    &--wrapper {
+      width: 100%;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+
+      @media (min-width: 1024px) {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 969px;
+      }
     }
   }
   &__menu-category {
@@ -1030,6 +1102,14 @@
     background-color: $purple;
     padding: 15px 24px;
 
+    @media (min-width: 1024px) {
+      font-family: "open Sans", sans-serif;
+      background-color: transparent;
+      padding: 0;
+
+      justify-content: center;
+    }
+
     &--lowercase {
       font-size: calculator-rem(16);
       color: $white;
@@ -1047,6 +1127,10 @@
     &--img {
       transform: rotate(0);
       transition: 0.3s;
+
+      @media (min-width: 1024px) {
+        display: none;
+      }
     }
   }
   &__menu-category-content {
@@ -1061,6 +1145,10 @@
     @media (min-width: 1024px) {
       height: auto;
       overflow: visible;
+
+      margin-top: 19px;
+      width: 148px;
+      align-items: center;
     }
 
     &--link {
@@ -1080,7 +1168,6 @@
 
     text-transform: uppercase;
 
-    
     margin: 30px 0 47px;
     padding: 0 24px;
 
