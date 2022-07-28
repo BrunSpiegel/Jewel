@@ -18,7 +18,9 @@
 
 Slick: Know more <a href="https://kenwheeler.github.io/slick/">here!!!<a>
 
-I also used <a href="https://fakestoreapi.com/">Fake Store API<a> as a sample of how the store will be.
+I used <a href="https://fakestoreapi.com/">Fake Store API<a> as a sample of how the store will be.
+
+And use <a href="https://behold.so/">Behold<a> to put my instagram photos on screen.
 
 
 <h1>💍💎✨ LOJA DE JOIAS HTC ✨💍💎<h1>
@@ -40,7 +42,11 @@ I also used <a href="https://fakestoreapi.com/">Fake Store API<a> as a sample of
 
 Slick: Saiba mais <a href="https://kenwheeler.github.io/slick/">aqui!!!<a>
 
-Eu também usei o site <a href="https://fakestoreapi.com/">Fake Store API<a> como uma amostra de como a loja irá ficar.
+usei o site <a href="https://fakestoreapi.com/">Fake Store API<a> como uma amostra de como a loja irá ficar.
+
+E o site <a href="https://behold.so/">Behold<a> para por as fotos do meu instagram na tela.
+
+
 
 
 
