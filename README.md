@@ -12,7 +12,7 @@
 
 4ª: Learn about how does the API works;
 
-<h2>third party library📚:<h2> 
+<h2>Third Party Library📚:<h2> 
 
 <a href="https://meyerweb.com/eric/tools/css/reset/">Reset CSS<a> By: <a href="https://meyerweb.com/eric/">Eric A. Meyer<a>
 
