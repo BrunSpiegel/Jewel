@@ -168,7 +168,7 @@ table {
   position: absolute;
   top: 40%;
   z-index: 1;
-  background-image: url(/assets/left-arrow.png);
+  background-image: url("/assets/left-arrow.png");
   background-repeat: no-repeat;
   background-position: right 24px center;
 }
@@ -229,7 +229,7 @@ table {
   position: absolute;
   top: 30%;
   z-index: 1;
-  background-image: url(/assets/left-arrow.png);
+  background-image: url("/assets/left-arrow.png");
   background-repeat: no-repeat;
   background-position: right 24px center;
 }
@@ -268,7 +268,7 @@ table {
   position: absolute;
   top: 40%;
   z-index: 1;
-  background-image: url(/assets/left-arrow.png);
+  background-image: url("/assets/left-arrow.png");
   background-repeat: no-repeat;
   background-position: right 24px center;
 }
@@ -308,7 +308,7 @@ table {
   position: absolute;
   top: 40%;
   z-index: 1;
-  background-image: url(/assets/left-arrow.png);
+  background-image: url("/assets/left-arrow.png");
   background-repeat: no-repeat;
   background-position: right 24px center;
 }
@@ -1125,7 +1125,7 @@ table {
 }
 @media (min-width: 1024px) {
   .footer {
-    background-image: url(./assets/butterfly-background.png);
+    background-image: url("./assets/butterfly-background.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
